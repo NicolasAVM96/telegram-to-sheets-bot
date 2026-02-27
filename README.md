@@ -24,13 +24,14 @@ El bot recibe un mensaje de texto multilínea con la rutina del día, procesa la
 
 1. **Clonar el repositorio:**
    ```bash
-   git clone [https://github.com/tu-usuario/telegram-workout-logger.git](https://github.com/tu-usuario/telegram-workout-logger.git)
+   git clone [https://github.com/NicolasAVM96/telegram-to-sheets-bot]
    cd telegram-workout-logger
 
 2. **Ejecutar script:**
     En este caso se usa "uv", de Astral, por lo cual se recomienda tenerlo instalado
-    # Inicializa el proyecto (Se debe tener el archivo pyproject.toml en la carpeta del proyecto)
-    """uv run bot_main.py"""
+    Inicializa el proyecto (Se debe tener el archivo pyproject.toml en la carpeta del proyecto)
     Esto instalara automaticamente las dependencias y creara el .venv de manera automatica
+    ```bash
+    uv run bot_main.py
 
     
