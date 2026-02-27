@@ -28,10 +28,16 @@ El bot recibe un mensaje de texto multilínea con la rutina del día, procesa la
    cd telegram-workout-logger
 
 2. **Ejecutar script:**
-    En este caso se usa "uv", de Astral, por lo cual se recomienda tenerlo instalado
-    Inicializa el proyecto (Se debe tener el archivo pyproject.toml en la carpeta del proyecto)
-    Esto instalara automaticamente las dependencias y creara el .venv de manera automatica
+    En este caso se usa "uv", de Astral, por lo cual se recomienda tenerlo instalado.
+    * **Inicializacion del proyecto:** 
+    Inicializa el proyecto (Se debe tener el archivo pyproject.toml en la carpeta del proyecto), esto instalara automaticamente las dependencias y creara el .venv de manera automatica
     ```bash
     uv run bot_main.py
+
+3. **APIs y TOKEN:**
+    * **Google Sheets:** 
+    Se debe crear un proyecto en el panel de agentes Google Cloud, habilitar la API de Google Sheets, crear y descargar el archivo "credentials.json". Este te entregara una direccion email, la cual debes compartirle tu xlm de google sheets.
+    * **Bot de Telegram:** 
+    Para poder obtener un token de Telegram, debes buscar a @BotFather en tus chats y agregar /newbot e indicarle el nombre de tu bot. Una vez completado este paso, se te entregara el TOKEN.
 
     
